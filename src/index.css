@@ -219,6 +219,15 @@ html[data-theme="dark"] .auth-switch {
   color: hsl(var(--muted-foreground));
 }
 
+/* ensure hero title is readable in dark mode */
+html[data-theme="dark"] .hero-content h1 span:first-child {
+  color: hsl(var(--foreground));
+}
+html[data-theme="dark"] .hero-content h1 span:last-child {
+  /* keep accent color, or adjust if needed */
+  color: hsl(var(--accent));
+}
+
 html[data-theme="dark"] .search-bar-input,
 html[data-theme="dark"] .tab-btn,
 html[data-theme="dark"] .btn-outline,
